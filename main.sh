@@ -201,11 +201,13 @@ fi
 fi
 #initialisation d'un depot git 
 #il faut choisir un langage pour le projet  
+#le depot ne peut pas être initailiser sans preciser le langage du projet 
 if  [ $# -eq 4 ]  && [ "$4" = "-git" ]
 then 
 if [ "$2" = "" ] 
 then 
 echo "You must set project type, please check the help : initdev –help"
+echo 1
 else
 
 if  [ "$2" = "-c" ]
@@ -253,13 +255,6 @@ cat  sources/latexMin.tex > $1/latexMin.tex
 cat  gitignore/tex > $1/.gitignore
 git init
 echo 0
-#le depot ne peut pas être initailiser sans preciser le langage du projet 
-else
-if [ "$2" = "" ] 
-then 
-echo "You must set project type, please check the help : initdev –help"
-echo 1
-fi
 fi
 fi
 
