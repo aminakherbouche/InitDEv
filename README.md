@@ -33,4 +33,4 @@ Attention: il est possible de consulter le help e tapant
 InitDev -initdev-help 
 
 #Licence
-Le document est sous licence Creative Commons Attribution-NoCommercial-ShareAlike v3.0 International License.
+Le document est sous licence GNU General Public License v3.0
